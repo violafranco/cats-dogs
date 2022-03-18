@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    color: #fff;
+    padding: 10px;
+}
+.topHeader p{
+    padding-left: 5em;
+}
+
+.configHeader{
+    display: flex;
+    padding-right: 3em;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    padding: 28px;
+    cursor: pointer;
+}
+
+.navBar img{
+    width: 15%;
+    position: relative;
+    left: 2em;
+}
+
+.menu{
+    display: none;
+}
+
+.optionsHeader{
+    display: flex;
+    color: #fff;
+    gap: 20px;
+    position: relative;
+    right: 2em;
+}
+
+.fotoMain{
+    background-image: url('./../img/BGmain.png');
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dentroFotoMain{
+    text-align: center;
+    padding-right: 4em;
+}
+
+.h3DentroFoto{
+    font-size: 2em;
+    font-weight: 200;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.pDentroFoto{
+    font-size: 1.2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.buttonDentroFoto{
+    background-color: #F0A83E;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.pawprint{
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+.pawprint h2{
+    margin-top: .3em;
+    margin-bottom: .3em;
+    font-size: 2.7em;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.cardProductos{
+    text-align: center;
+    background-color: #FBFAF6;
+    margin-top: 1em;
+}
+
+
+.cardPrecio{
+    color: #F0A83E;
+    margin-top: .3em;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.formulario h2{
+    margin: .8em;
+    font-size: 2em;
+}
+
+.formulario form{
+    margin: 0.5em;
+}
+
+.formulario div{
+    margin-top: 2em;
+}
+
+.formStyle{
+    background-color: #3C2313;
+    width: 33em;
+    padding: 18px;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.btnReset{
+    padding: 8px;
+    width: 6em;
+    border: none;
+    background-color: #8A8787;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.4em;
+    margin-right: .3em;
+    cursor: pointer;
+}
+
+.btnSend{
+    padding: 8px;
+    width: 6em;
+    border: none;
+    background: #F0A83E;
+    border-radius: 20px;
+    color: #fff;
+    color: #fff;
+    font-size: 1.4em;
+    margin-left: .3em;
+    cursor: pointer;
+}
+
+.footerSuscribe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+    margin-top: 4em;
+    padding: .8em;
+    color: #fff;
+}
+
+.footerSuscribe form button{
+    margin-right: 3em;
+}
+
+.formFooter{
+    padding: .9em;
+    border-radius: 15px;
+    width: 25em;
+    border: 0;
+    outline: none;
+}
+
+.btnFooter{
+    padding: .9em;
+    border-radius: 15px;
+    background: #3C2313;
+    border: none;
+    color: #fff;
+    margin-left: .4em;
+    cursor: pointer;
+}
+
+.footer{
+    background: #3C2313;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoFooter{
+    width: 15%;
+    height: 15%;
+    margin-right: 5em;
+}
+
+.footerImg{
+    display: flex;
+    margin: 1.2em;
+    margin-left: 3em;
+    color: #fff;
+}
+
+.footerImg div{
+    margin-left: 1em;
+}
+
+.footerImg div p{
+    color: #8A8787;
+}
+
+.endFooter{
+    background: #222222;
+    color: #fff;
+    text-align: center;
+    padding: .3em;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .topHeader{
+        display: none;
+    }
+
+    .optionsHeader{
+        display: none;
+    }
+
+    .navBar img{
+        width: 35%;
+    }
+
+    .fotoMain{
+        justify-content: center;
+    }
+
+    .dentroFotoMain{
+        padding-right: 0;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu{
+        display: inline-block;
+        color: #fff;
+        font-size: 1.7em;
+        cursor: pointer;
+
+
+    }
+
+    .formStyle{
+        width: 28em;
+    }
+
+    .footerSuscribe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formFooter{
+        width: 15em;
+        margin-top: 1.2em;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footerImg{
+        margin-left: 0;
+    }
+
+    .footerImg div{
+        margin-left: 1em;
+    }
+
+    .logoFooter{
+        width: 40%;
+        margin-right: 0;
+    }
+
+    .footerSuscribe form button{
+        margin-right: 0;
+    }
+}
