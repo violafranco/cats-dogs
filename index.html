@@ -14,8 +14,18 @@
         <div class="topHeader">
             <p>Grandes ofertas en comederos</p>
             <div class="configHeader">
-                <h5>Español <i class="fa-solid fa-angle-down"></i></h5>
-                <h5>ARG$ <i class="fa-solid fa-angle-down"></i></h5>
+                <div class="select">
+                    <select name="lenguajes" class="selectHeader">
+                        <option value="1" >Español</option>
+                        <option value="2">Inglés</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select name="lenguajes" class="selectHeader">
+                        <option value="1">ARG$</option>
+                        <option value="2">USD$</option>
+                    </select>
+                </div>
             </div>
         </div>
 
@@ -66,14 +76,10 @@
 
         <div class="formulario">
             <h2>Contáctanos</h2>
-            <form> 
+            <form>
                 <input class="formStyle" type="text" placeholder="Nombre y apellido">
-            </form>
-            <form>
                 <input class="formStyle" type="email" placeholder="Ingresá tu correo electrónico">
-            </form>
-            <form>
-                <input class="formStyle" type="tel" placeholder="Teléfono">
+                <input class="formStyle" type="tel" placeholder="Ingresá tu teléfono">
             </form>
             <div>
                 <button class="btnReset">Resetear</button>

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
+
+--root {
+    --primary-color: #F0A83E;
+    --secondary-color: #3C2313;
+    --black: #000;
+    --white: #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +32,18 @@
     gap: 15px;
     cursor: pointer;
 }
+
+.selectHeader{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+}
+.selectHeader option{
+    color: #000000;
+}
+
 
 .navBar{
     display: flex;
@@ -131,6 +151,12 @@
 }
 
 .formulario form{
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form input{
     margin: 0.5em;
 }
 
@@ -275,8 +301,6 @@
         color: #fff;
         font-size: 1.7em;
         cursor: pointer;
-
-
     }
 
     .formStyle{
